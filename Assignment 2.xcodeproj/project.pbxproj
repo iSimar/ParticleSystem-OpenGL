@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9A7BB9161A060B0A009BA37C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BB9151A060B0A009BA37C /* main.cpp */; };
+		9A7BB91F1A060D27009BA37C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7BB91E1A060D27009BA37C /* GLUT.framework */; };
+		9A7BB9391A060F6B009BA37C /* particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BB9371A060F6B009BA37C /* particle.cpp */; };
+		9AD6B6E61A0618C7004A932D /* point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6B6E41A0618C7004A932D /* point.cpp */; };
+		9AD6B6E81A061E81004A932D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD6B6E71A061E81004A932D /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,12 @@
 /* Begin PBXFileReference section */
 		9A7BB9121A060B0A009BA37C /* Assignment 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Assignment 2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7BB9151A060B0A009BA37C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9A7BB91E1A060D27009BA37C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		9A7BB9371A060F6B009BA37C /* particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = particle.cpp; sourceTree = "<group>"; };
+		9A7BB9381A060F6B009BA37C /* particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = particle.h; sourceTree = "<group>"; };
+		9AD6B6E41A0618C7004A932D /* point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = point.cpp; sourceTree = "<group>"; };
+		9AD6B6E51A0618C7004A932D /* point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = point.h; sourceTree = "<group>"; };
+		9AD6B6E71A061E81004A932D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD6B6E81A061E81004A932D /* OpenGL.framework in Frameworks */,
+				9A7BB91F1A060D27009BA37C /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +53,8 @@
 		9A7BB9091A060B0A009BA37C = {
 			isa = PBXGroup;
 			children = (
+				9AD6B6E71A061E81004A932D /* OpenGL.framework */,
+				9A7BB91E1A060D27009BA37C /* GLUT.framework */,
 				9A7BB9141A060B0A009BA37C /* Assignment 2 */,
 				9A7BB9131A060B0A009BA37C /* Products */,
 			);
@@ -58,6 +72,10 @@
 			isa = PBXGroup;
 			children = (
 				9A7BB9151A060B0A009BA37C /* main.cpp */,
+				9A7BB9371A060F6B009BA37C /* particle.cpp */,
+				9A7BB9381A060F6B009BA37C /* particle.h */,
+				9AD6B6E41A0618C7004A932D /* point.cpp */,
+				9AD6B6E51A0618C7004A932D /* point.h */,
 			);
 			path = "Assignment 2";
 			sourceTree = "<group>";
@@ -119,6 +137,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A7BB9161A060B0A009BA37C /* main.cpp in Sources */,
+				9A7BB9391A060F6B009BA37C /* particle.cpp in Sources */,
+				9AD6B6E61A0618C7004A932D /* point.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +222,7 @@
 		9A7BB91A1A060B0A009BA37C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +230,7 @@
 		9A7BB91B1A060B0A009BA37C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -232,6 +254,7 @@
 				9A7BB91B1A060B0A009BA37C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
