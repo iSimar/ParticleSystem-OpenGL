@@ -1,3 +1,3 @@
 ParticleSystem-OpenGL
 =====================
-![demo](http://www.gfycat.com/CrazyExcitableAstrangiacoral)
+![demo](http://fat.gfycat.com/CrazyExcitableAstrangiacoral.gif)
